@@ -9,7 +9,7 @@ cache:
 script:
   - yarn test
   - yarn build
-  - echo my-custom-domain.ru > build/CNAME
+  # - echo my-custom-domain.ru > build/CNAME
 
 deploy:
   provider: pages
@@ -18,7 +18,7 @@ deploy:
   skip-cleanup: true
   keep-history: true
   local-dir: build
-  repo: Yourname/compiled-app
+  repo: mkiselyow/star_wars_build
   target-branch: master
   on:
     branch: master
